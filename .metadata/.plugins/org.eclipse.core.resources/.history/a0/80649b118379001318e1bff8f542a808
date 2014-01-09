@@ -1,0 +1,15 @@
+// Aaron Korpa
+// ASDI Term 1401
+// Project 1
+
+var obj1 = {
+	name: "Object 1",
+	length: 4,
+	width: 3,
+	area: function () {
+		return this.length * this.width;
+	},
+	announce: function () {
+		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area + ".";
+	}
+};

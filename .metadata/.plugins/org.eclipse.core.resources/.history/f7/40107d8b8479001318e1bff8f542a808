@@ -105,18 +105,3 @@ obj9.area = function() {
 obj9.announce = function() {
 	return "I am " + obj9.name + ". I have a height of " + obj9.length + ". I have a width of " + obj9.width + ". This means that my area is " + obj9.area + ".";
 };
-
-var obj10 = new Object();
-obj10.name = "Object 10";
-obj10.length = 2;
-obj10.width = 9;
-obj10.area = function() {
-	return obj10.length * obj10.width;
-};
-obj10.announce = function() {
-	return "I am " + obj10.name + ". I have a height of " + obj10.length + ". I have a width of " + obj10.width + ". This means that my area is " + obj10.area + ".";
-};
-
-var allObjects = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10];
-
-exports.data = allObjects;
