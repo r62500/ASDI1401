@@ -2,8 +2,6 @@
 // ASDI Term 1401
 // Project 1
 
-
-// Objects using literal notation
 var obj1 = {
 	name : "Object 1",
 	length : 4,
@@ -64,7 +62,6 @@ var obj5 = {
 	}
 };
 
-// Objects using dot notation
 var obj6 = new Object();
 obj6.name = "Object 6";
 obj6.length = 1;
@@ -120,8 +117,6 @@ obj10.announce = function() {
 	return "I am " + obj10.name + ". I have a height of " + obj10.length + ". I have a width of " + obj10.width + ". This means that my area is " + obj10.area() + ".";
 };
 
-// Array of all objects
 var allObjects = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10];
 
-// Export array for use within other js files.
 exports.data = allObjects;
