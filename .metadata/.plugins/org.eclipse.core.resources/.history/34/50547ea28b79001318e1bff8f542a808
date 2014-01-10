@@ -7,7 +7,7 @@ var objData = require("data");
 exports.rows = function createObjectRows() {
 	for(i=0;i<objData.data.length;i++){
 		var row = Ti.UI.createTableViewRow({
-			height: "100dp"
+			height: "60dp"
 		});
 		
 		var nameLabel = Ti.UI.createLabel({

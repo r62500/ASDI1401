@@ -10,7 +10,7 @@ var obj1 = {
 		return this.length * this.width;
 	},
 	announce : function () {
-		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area() + ".";
+		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area + ".";
 	}
 };
 
@@ -22,7 +22,7 @@ var obj2 = {
 		return this.length * this.width;
 	},
 	announce : function () {
-		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area() + ".";
+		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area + ".";
 	}
 };
 
@@ -34,7 +34,7 @@ var obj3 = {
 		return this.length * this.width;
 	},
 	announce : function () {
-		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area() + ".";
+		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area + ".";
 	}
 };
 
@@ -46,7 +46,7 @@ var obj4 = {
 		return this.length * this.width;
 	},
 	announce : function () {
-		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area() + ".";
+		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area + ".";
 	}
 };
 
@@ -58,7 +58,7 @@ var obj5 = {
 		return this.length * this.width;
 	},
 	announce : function () {
-		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area() + ".";
+		return "I am " + this.name + ". I have a height of " + this.length + ". I have a width of " + this.width + ". This means that my area is " + this.area + ".";
 	}
 };
 
@@ -70,7 +70,7 @@ obj6.area = function() {
 	return obj6.length * obj6.width;
 };
 obj6.announce = function() {
-	return "I am " + obj6.name + ". I have a height of " + obj6.length + ". I have a width of " + obj6.width + ". This means that my area is " + obj6.area() + ".";
+	return "I am " + obj6.name + ". I have a height of " + obj6.length + ". I have a width of " + obj6.width + ". This means that my area is " + obj6.area + ".";
 };
 
 var obj7 = new Object();
@@ -81,7 +81,7 @@ obj7.area = function() {
 	return obj7.length * obj7.width;
 };
 obj7.announce = function() {
-	return "I am " + obj7.name + ". I have a height of " + obj7.length + ". I have a width of " + obj7.width + ". This means that my area is " + obj7.area() + ".";
+	return "I am " + obj7.name + ". I have a height of " + obj7.length + ". I have a width of " + obj7.width + ". This means that my area is " + obj7.area + ".";
 };
 
 var obj8 = new Object();
@@ -92,7 +92,7 @@ obj8.area = function() {
 	return obj8.length * obj8.width;
 };
 obj8.announce = function() {
-	return "I am " + obj8.name + ". I have a height of " + obj8.length + ". I have a width of " + obj8.width + ". This means that my area is " + obj8.area() + ".";
+	return "I am " + obj8.name + ". I have a height of " + obj8.length + ". I have a width of " + obj8.width + ". This means that my area is " + obj8.area + ".";
 };
 
 var obj9 = new Object();
@@ -103,7 +103,7 @@ obj9.area = function() {
 	return obj9.length * obj9.width;
 };
 obj9.announce = function() {
-	return "I am " + obj9.name + ". I have a height of " + obj9.length + ". I have a width of " + obj9.width + ". This means that my area is " + obj9.area() + ".";
+	return "I am " + obj9.name + ". I have a height of " + obj9.length + ". I have a width of " + obj9.width + ". This means that my area is " + obj9.area + ".";
 };
 
 var obj10 = new Object();
@@ -114,7 +114,7 @@ obj10.area = function() {
 	return obj10.length * obj10.width;
 };
 obj10.announce = function() {
-	return "I am " + obj10.name + ". I have a height of " + obj10.length + ". I have a width of " + obj10.width + ". This means that my area is " + obj10.area() + ".";
+	return "I am " + obj10.name + ". I have a height of " + obj10.length + ". I have a width of " + obj10.width + ". This means that my area is " + obj10.area + ".";
 };
 
 var allObjects = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10];
