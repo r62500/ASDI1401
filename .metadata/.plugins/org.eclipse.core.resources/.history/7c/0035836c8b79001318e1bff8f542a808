@@ -16,8 +16,8 @@ var obj1 = {
 
 var obj2 = {
 	name : "Object 2",
-	length : 5,
-	width : 9,
+	length : 4,
+	width : 3,
 	area : function () {
 		return this.length * this.width;
 	},
@@ -28,8 +28,8 @@ var obj2 = {
 
 var obj3 = {
 	name : "Object 3",
-	length : 1,
-	width : 2,
+	length : 4,
+	width : 3,
 	area : function () {
 		return this.length * this.width;
 	},
@@ -40,8 +40,8 @@ var obj3 = {
 
 var obj4 = {
 	name : "Object 4",
-	length : 8,
-	width : 7,
+	length : 4,
+	width : 3,
 	area : function () {
 		return this.length * this.width;
 	},
@@ -52,8 +52,8 @@ var obj4 = {
 
 var obj5 = {
 	name : "Object 5",
-	length : 2,
-	width : 9,
+	length : 4,
+	width : 3,
 	area : function () {
 		return this.length * this.width;
 	},
@@ -64,8 +64,8 @@ var obj5 = {
 
 var obj6 = new Object();
 obj6.name = "Object 6";
-obj6.length = 1;
-obj6.width = 4;
+obj6.length = 2;
+obj6.width = 9;
 obj6.area = function() {
 	return obj6.length * obj6.width;
 };
@@ -75,8 +75,8 @@ obj6.announce = function() {
 
 var obj7 = new Object();
 obj7.name = "Object 7";
-obj7.length = 7;
-obj7.width = 6;
+obj7.length = 2;
+obj7.width = 9;
 obj7.area = function() {
 	return obj7.length * obj7.width;
 };
@@ -86,8 +86,8 @@ obj7.announce = function() {
 
 var obj8 = new Object();
 obj8.name = "Object 8";
-obj8.length = 3;
-obj8.width = 2;
+obj8.length = 2;
+obj8.width = 9;
 obj8.area = function() {
 	return obj8.length * obj8.width;
 };
@@ -97,8 +97,8 @@ obj8.announce = function() {
 
 var obj9 = new Object();
 obj9.name = "Object 9";
-obj9.length = 4;
-obj9.width = 2;
+obj9.length = 2;
+obj9.width = 9;
 obj9.area = function() {
 	return obj9.length * obj9.width;
 };
@@ -108,8 +108,8 @@ obj9.announce = function() {
 
 var obj10 = new Object();
 obj10.name = "Object 10";
-obj10.length = 5;
-obj10.width = 8;
+obj10.length = 2;
+obj10.width = 9;
 obj10.area = function() {
 	return obj10.length * obj10.width;
 };
