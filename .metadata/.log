@@ -27,3 +27,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/aaronkor
 
 !ENTRY org.eclipse.core.net 1 0 2014-01-09 14:50:53.579
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2014-01-09 15:51:44.884
+!MESSAGE NLS missing message: NodeTitaniumSDKCommandsHandler_mobileWebBuild in: com.appcelerator.titanium.mobile.cli.messages
