@@ -32,23 +32,31 @@ var author1 = Ti.UI.createLabel({
 });
 
 var title1 = Ti.UI.createLabel({
-	top: 60,
+	top: 40,
 	left: 5
 });
 
 var author2 = Ti.UI.createLabel({
-	top: 170,
+	top: 100,
 	left: 5
 });
 
 var title2 = Ti.UI.createLabel({
-	top: 220,
+	top: 130,
 	left: 5
 });
 
+var author3 = Ti.UI.createLabel({
+	top: 190,
+	left: 5
+});
 
+var title3 = Ti.UI.createLabel({
+	top: 220,
+	left: 5
+});
 // add labels to view
-view.add(author1, title1, author2, title2);
+view.add(author1, title1, author2, title2, author3, title3);
 
 // add view to window
 win1.add(view);
