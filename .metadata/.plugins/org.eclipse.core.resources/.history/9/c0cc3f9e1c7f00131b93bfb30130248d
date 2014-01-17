@@ -1,0 +1,22 @@
+// Aaron Korpa
+// ASDI 1401
+// Project 2
+
+
+// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+Titanium.UI.setBackgroundColor('#000');
+
+var win1, table1, remote;
+
+remote = require("remote_data");
+
+table1 = Ti.UI.createTableView();
+
+win1 = Titanium.UI.createWindow({
+	title: "Tab 1",
+	backgroundColor: "#fff"
+});
+
+win1.add(table1);
+
+win1.open();

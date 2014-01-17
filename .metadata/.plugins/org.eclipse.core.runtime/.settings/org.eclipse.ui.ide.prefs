@@ -1,3 +1,6 @@
+SHOW_COOLBAR=true
+SHOW_PERSPECTIVEBAR=true
+TASKS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
 platformState=1380625751422
 quickStart=false

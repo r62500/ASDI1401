@@ -1,64 +1,68 @@
+// Aaron Korpa
+// ASDI 1401
+// Project 2
+
+
 // this sets the background color of the master UIView (when there are no windows/tab groups on it)
 Titanium.UI.setBackgroundColor('#000');
 
-// create tab group
+var remote = require("remote_data");
+
 var tabGroup = Titanium.UI.createTabGroup();
 
-
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
+var win1 = Titanium.UI.createWindow({
+	title: "Aaron Korpa - Project 2",
+	backgroundColor: "#fff"
 });
+
 var tab1 = Titanium.UI.createTab({  
     icon:'KS_nav_views.png',
-    title:'Tab 1',
+    title:'Remote Data',
     window:win1
 });
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+// create view
+var view = Ti.UI.createView({
 });
 
-win1.add(label1);
-
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
+// Labels to apply remote data to.
+var author1 = Ti.UI.createLabel({
+	top: 10,
+	left: 5
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+var title1 = Ti.UI.createLabel({
+	top: 40,
+	left: 5
 });
 
-win2.add(label2);
+var author2 = Ti.UI.createLabel({
+	top: 100,
+	left: 5
+});
 
+var title2 = Ti.UI.createLabel({
+	top: 130,
+	left: 5
+});
 
+var author3 = Ti.UI.createLabel({
+	top: 190,
+	left: 5
+});
 
-//
+var title3 = Ti.UI.createLabel({
+	top: 220,
+	left: 5
+});
+// add labels to view
+view.add(author1, title1, author2, title2, author3, title3);
+
+// add view to window
+win1.add(view);
+
 //  add tabs
-//
 tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
-
 
 // open tab group
 tabGroup.open();

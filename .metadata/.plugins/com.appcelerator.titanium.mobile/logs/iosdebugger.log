@@ -1,0 +1,36 @@
+Logger started at: Thursday, January 16, 2014 6:24:07 PM PST
+Component: com.appcelerator.titanium.mobile
+Version: 1.0.0.1379026748
+[24:7.563] Sent: >21*1389925447562*version<
+[24:7.563] Recv: >1389925447562*2*3.1.3.GA<
+[24:7.566] Sent: >36*1389925447563*option*monitorXHR*true<
+[24:7.566] Recv: >1389925447563<
+[24:7.566] Sent: >45*1389925447564*option*stepFiltersEnabled*false<
+[24:7.567] Recv: >1389925447564<
+[24:7.567] Sent: >45*1389925447565*option*suspendOnFirstLine*false<
+[24:7.568] Recv: >1389925447565<
+[24:7.568] Sent: >46*1389925447566*option*suspendOnExceptions*false<
+[24:7.568] Recv: >1389925447566<
+[24:7.569] Sent: >41*1389925447567*option*suspendOnErrors*true<
+[24:7.569] Recv: >1389925447567<
+[24:7.569] Sent: >43*1389925447568*option*suspendOnKeywords*true<
+[24:7.569] Recv: >1389925447568<
+[24:7.570] Sent: >45*1389925447569*option*bypassConstructors*false<
+[24:7.570] Recv: >1389925447569<
+[24:7.570] Sent: >45*1389925447570*option*stepFiltersEnabled*false<
+[24:7.571] Recv: >1389925447570<
+[24:7.571] Sent: >30*1389925447571*detailFormatters<
+[24:7.571] Recv: >1389925447571<
+[24:7.571] Sent: >20*1389925447572*enable<
+[24:7.571] Recv: >1389925447572<
+[24:7.573] Recv: >threads*created*0*kroll$1<
+[24:7.574] Recv: >log*out*[DEBUG] Analytics is enabled = YES<
+[24:7.575] Recv: >log*out*[DEBUG] Loading: /Users/aaronkorpa/Library/Application Support/iPhone Simulator/6.1/Applications/6F4E35F6-A2F6-486D-95C7-841C6298361B/ASDI_Project2.app/app.js, Resource: app_js<
+[24:7.575] Recv: >scripts*created*309385600|app:/app.js||1|27<
+[24:7.575] Recv: >resumed*0*started<
+[24:7.576] Recv: >log*out*[DEBUG] Loading: /Users/aaronkorpa/Library/Application Support/iPhone Simulator/6.1/Applications/6F4E35F6-A2F6-486D-95C7-841C6298361B/ASDI_Project2.app/remote_data.js, Resource: remote_data_js<
+[24:7.576] Recv: >scripts*created*309385504|app:/remote_data.js||1|38<
+[24:7.604] Recv: >suspended*0*exception*app:/app.js*20<
+[24:7.636] Sent: >22*1389925447573*frames*0<
+[24:7.637] Recv: >1389925447573*0|||app:/app.js|20|false|0|0<
+----------End of file----------

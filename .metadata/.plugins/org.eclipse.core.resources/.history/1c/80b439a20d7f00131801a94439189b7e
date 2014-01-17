@@ -1,0 +1,31 @@
+// Aaron Korpa
+// ASDI 1401
+// Project 2
+
+var remoteResponse, remoteError, json, testTitle, testAuthor;
+
+var remoteResponse = function(){
+	Ti.API.debug(this.responseText);
+	json = JSON.parse(this.responseText);
+	
+	testTitle = json.data.children[0].data.title;
+	testAuthor = json.data.children[0].data.author;
+	
+	Ti.API.debug(testTitle);
+	Ti.API.debug(testAuthor);
+};
+
+var remoteError = function(e){
+	Ti.API.debug("Status: " + this.status);
+	TI.API.debug("Text: " + this.responseText);
+	TI.API.debug("Error: " + e.error);
+};
+
+var xhr = Ti.Network.createHTTPClient({
+	onload: remoteResponse,
+	onError: remoteError,
+	timeout: 5000
+});
+
+xhr.open("GET", "http:api.reddit.com/");
+xhr.send();

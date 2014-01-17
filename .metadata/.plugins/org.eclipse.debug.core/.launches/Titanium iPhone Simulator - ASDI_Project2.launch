@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.simulator.launchConfigurationType">
+<booleanAttribute key="ATTR_CLEAN_BEFORE_LAUNCH" value="false"/>
+<stringAttribute key="ATTR_LOG_LEVEL" value="Debug"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="ASDI_Project2"/>
+<stringAttribute key="display" value="RETINA"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ASDI_Project2"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="overrideDebugPreferences" value="false"/>
+<stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
+<stringAttribute key="sdk_version" value="6.1"/>
+<stringAttribute key="sim_device" value="iPhone"/>
+<stringAttribute key="simulator_debug_config" value="10.0.1.22:60775"/>
+<stringAttribute key="simulator_version" value="6.1"/>
+</launchConfiguration>

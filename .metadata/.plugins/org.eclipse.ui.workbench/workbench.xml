@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench version="2.0">
 <workbenchAdvisor/>
-<window height="874" width="1200" x="9" y="22">
+<window height="874" width="1200" x="40" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="0" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="0" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="0" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="0" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="0" y="22"/>
+<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="40" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="144" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="40" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.appcelerator.titanium.ui.ide.tiappEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.appcelerator.titanium.ui.ide.tiappEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page focus="true" label="Workspace - Studio">
+<page aggregateWorkingSetId="Aggregate for window 1389924213003" focus="true" label="Workspace - Debug">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -31,43 +31,57 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/aaronkorpa/Documents/Fullsail/9 ASDI/ASDI_Workspace/ASDI_Project1/Resources/app.js" title="app.js" tooltip="ASDI_Project1/Resources/app.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ASDI_Project1/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="804" selectionTopPixel="64"/>
+<editor id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/aaronkorpa/Documents/Fullsail/9 ASDI/ASDI_Workspace/ASDI_Project2/Resources/app.js" title="app.js" tooltip="ASDI_Project2/Resources/app.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ASDI_Project2/Resources/app.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="392" selectionTopPixel="0"/>
 </editor>
-<editor id="com.aptana.editor.js" name="data.js" partName="data.js" path="/Users/aaronkorpa/Documents/Fullsail/9 ASDI/ASDI_Workspace/ASDI_Project1/Resources/data.js" title="data.js" tooltip="ASDI_Project1/Resources/data.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ASDI_Project1/Resources/data.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3536" selectionTopPixel="1339"/>
-</editor>
-<editor id="com.aptana.editor.js" name="buildRows.js" partName="buildRows.js" path="/Users/aaronkorpa/Documents/Fullsail/9 ASDI/ASDI_Workspace/ASDI_Project1/Resources/buildRows.js" title="buildRows.js" tooltip="ASDI_Project1/Resources/buildRows.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ASDI_Project1/Resources/buildRows.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="189" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="com.aptana.editor.js" name="remote_data.js" partName="remote_data.js" path="/Users/aaronkorpa/Documents/Fullsail/9 ASDI/ASDI_Workspace/ASDI_Project2/Resources/remote_data.js" title="remote_data.js" tooltip="ASDI_Project2/Resources/remote_data.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ASDI_Project2/Resources/remote_data.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="741" selectionTopPixel="236"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
+<view id="com.aptana.js.debug.ui.scriptsView" partName="Loaded Scripts"/>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="ASDI_Project1">
-<project name="ASDI_Project1">&#x0A;<selection>&#x0A;<element path="/ASDI_Project1"/>
+<project name="ASDI_Project1">
+<selection>
+<element path="/ASDI_Project1"/>
 </selection>
 </project>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.aptana.editor.js" activePerspective="com.appcelerator.titanium.ui.StudioPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.appcelerator.titanium.ui.perspectives.TitaniumStudioPerspectiveFactory" id="com.appcelerator.titanium.ui.StudioPerspective" label="Studio"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -153,163 +167,260 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="com.aptana.browser.actionSet"/>
+<alwaysOnActionSet id="org.chromium.debug.ui.actionSets"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="com.aptana.js.debug.ui.actionSet"/>
+<alwaysOnActionSet id="com.aptana.terminal.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.aptana.explorer.view"/>
+<show_view_action id="com.aptana.js.debug.ui.scriptsView"/>
+<show_view_action id="com.aptana.js.debug.ui.AJAXMonitorView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<perspective_action id="com.appcelerator.titanium.ui.StudioPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="com.aptana.js.debug.ui.scriptsView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="com.aptana.explorer.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74938875" ratioLeft="613" ratioRight="205" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.44861338" ratioLeft="275" ratioRight="338" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="596" ratioRight="596" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="com.aptana.js.debug.ui.scriptsView" label="Loaded Scripts"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/ASDI_Project2/Resources/remote_data.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/ASDI_Project1/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/ASDI_Project1/Resources/buildRows.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/ASDI_Project1/Resources/data.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/ASDI_Project2/Resources/buildRows.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/ASDI_Project2/Resources/app.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/ASDI_Project1/Resources/buildRows.js"/>
 </editors>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3544" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project1" index="2">
+<position info="not_deleted" x="0" y="611"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="378" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project2" index="4">
+<position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3544" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="197" y="0"/>
+<item historyLabel="data.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3544" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project2" index="4">
+<position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="826" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="393" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3119" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="15" y="0"/>
+<item historyLabel="app.js | ASDI_Project1" index="1">
+<position info="not_deleted" x="47" y="1032"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3021" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project1" index="2">
+<position info="not_deleted" x="0" y="611"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="15" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project2" index="4">
+<position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="826" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project1" index="2">
+<position/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3021" y="0"/>
+<item historyLabel="data.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="15" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="393" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="104" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="data.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="393" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="104" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project1" index="2">
+<position/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="data.js" index="3">
+<position info="not_deleted" x="202" y="189"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project1" index="2">
+<position/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project2" index="4">
+<position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="buildRows.js | ASDI_Project2" index="4">
+<position info="not_deleted" x="433" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="393" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="164" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="app.js" index="5">
+<position/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="300" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="113" y="24"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="app.js | ASDI_Project1" index="1">
+<position info="not_deleted" x="47" y="1032"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="240" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="359" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="276" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="355" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="392" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="392" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="buildRows.js" index="6">
+<position/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="392" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="buildRows.js" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="buildRows.js" index="6">
+<position info="not_deleted" x="412" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="392" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="360" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="392" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="642" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="392" y="0"/>
 </item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="642" y="0"/>
 </item>
-<item historyLabel="data.js" index="1">
-<position info="not_deleted" x="3536" y="0"/>
+<item historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="741" y="0"/>
 </item>
-<item historyLabel="buildRows.js" index="2">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="app.js" index="5">
+<position info="not_deleted" x="392" y="0"/>
 </item>
-<item active="true" historyLabel="app.js" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item active="true" historyLabel="remote_data.js" index="0">
+<position info="not_deleted" x="741" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -317,6 +428,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
 <trimArea IMemento.internal.id="1024">
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
@@ -329,14 +443,26 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="buildRows.js" tooltip="ASDI_Project1/Resources/buildRows.js">
 <persistable path="/ASDI_Project1/Resources/buildRows.js"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="buildRows.js" tooltip="ASDI_Project2/Resources/buildRows.js">
+<persistable path="/ASDI_Project2/Resources/buildRows.js"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="data.js" tooltip="ASDI_Project1/Resources/data.js">
 <persistable path="/ASDI_Project1/Resources/data.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="ASDI_Project1/tiapp.xml">
-<persistable path="/ASDI_Project1/tiapp.xml"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="ASDI_Project1/Resources/app.js">
 <persistable path="/ASDI_Project1/Resources/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="remote_data.js" tooltip="ASDI_Project2/Resources/remote_data.js">
+<persistable path="/ASDI_Project2/Resources/remote_data.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="ASDI_Project2/Resources/app.js">
+<persistable path="/ASDI_Project2/Resources/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="ASDI_Project2/tiapp.xml">
+<persistable path="/ASDI_Project2/tiapp.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="ASDI_Project1/tiapp.xml">
+<persistable path="/ASDI_Project1/tiapp.xml"/>
 </file>
 </mruList>
 </workbench>

@@ -1,6 +1,8 @@
-LAST_LAUNCH_TIMESTAMP=1389915578588
+ASDI_Project2\:ConsoleLogLevel=Info
+LAST_LAUNCH_TIMESTAMP=1389924267906
 eclipse.preferences.version=1
-iOS\ build\ and\ deploy\:ConsoleLogLevel=Info
+iOS\ build\ and\ deploy\:ConsoleLogLevel=Debug
+preference.default.toolbar.visible_org.eclipse.debug.ui.DebugPerspective=true
 preference.show.console.onError=true
-preference.studio.perspective.toolbar.visible=false
+preference.studio.perspective.toolbar.visible=true
 preference.studio.perspective.version=102
