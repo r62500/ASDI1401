@@ -1,0 +1,101 @@
+// Aaron Korpa
+// ASDI 1401
+// Project 3
+
+// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+Titanium.UI.setBackgroundColor('#000');
+
+var db = Titanium.Database.open("users");
+db.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, user TEXT)");
+
+//var data = getRowData();
+
+// create tab group
+var tabGroup = Titanium.UI.createTabGroup();
+
+//
+// create base UI tab and root window
+//
+var win1 = Titanium.UI.createWindow({  
+    title:'User Input Window',
+    backgroundColor:'#fff'
+});
+var tab1 = Titanium.UI.createTab({  
+    icon:'KS_nav_views.png',
+    title:'User Input',
+    window:win1
+});
+
+
+// User input fields
+
+var firstName = Titanium.UI.createTextField({
+	color: "#000",
+	top: 10,
+	height: 60,
+	width: 400,
+	textAlign: "center",
+	hintText: "First Name"
+});
+
+var lastName = Titanium.UI.createTextField({
+	color: "#000",
+	top: 80,
+	height: 60,
+	width: 400,
+	textAlign: "center",
+	hintText: "Last Name"
+});
+
+var phoneNumber = Titanium.UI.createTextField({
+	color: "#000",
+	top: 150,
+	height: 60,
+	width: 400,
+	textAlign: "center",
+	hintText: "Phone Number"
+});
+
+var submitButton = Titanium.UI.createButton({
+	top: 150,
+	height: 60,
+	width: 300,
+	title: "Submit Data"
+});
+
+win1.add(firstName, lastName, submitButton);
+
+//
+// create controls tab and root window
+//
+var win2 = Titanium.UI.createWindow({  
+    title:'Database Window',
+    backgroundColor:'#fff'
+});
+var tab2 = Titanium.UI.createTab({  
+    icon:'KS_nav_ui.png',
+    title:'Database',
+    window:win2
+});
+
+var label2 = Titanium.UI.createLabel({
+	color:'#999',
+	text:'Database Window',
+	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	textAlign:'center',
+	width:'auto'
+});
+
+win2.add(label2);
+
+
+
+//
+//  add tabs
+//
+tabGroup.addTab(tab1);  
+tabGroup.addTab(tab2);  
+
+
+// open tab group
+tabGroup.open();

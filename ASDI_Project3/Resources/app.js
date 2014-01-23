@@ -40,18 +40,18 @@ var firstName = Titanium.UI.createTextField({
 	color: "#000",
 	top: 10,
 	height: 60,
-	width: 400,
+	width: 300,
 	textAlign: "center",
-	hintText: "First Name"
+	hintText: "* First Name"
 });
 
 var lastName = Titanium.UI.createTextField({
 	color: "#000",
 	top: 80,
 	height: 60,
-	width: 400,
+	width: 300,
 	textAlign: "center",
-	hintText: "Last Name"
+	hintText: "* Last Name"
 });
 
 var phoneNumber = Titanium.UI.createTextField({
@@ -70,50 +70,101 @@ var submitButton = Titanium.UI.createButton({
 	title: "Submit Data"
 });
 
+// Click Event for Submit button
+submitButton.addEventListener("click", function(e){
+	
+	//Make sure required fields are entered, else error.
+	if (lastName.value == "" && firstName.value == "") {
+		alert("First Name is a required field.");
+	} else if (lastName.value == "") {
+		alert("Last Name is a required field");
+	} else if (firstName.value == "") {
+		alert("First Name and Last Name are required fields.");
+	} else {
+		var userInput = {};
+
+		
+		userInput.first_name = firstName.value;
+		userInput.last_name = lastName.value;
+		if (phoneNumber.value == "") {
+			phoneNumber.value = "No Phone";
+			userInput.phone_number = phoneNumber.value;
+		} else {
+			userInput.phone_number = phoneNumber.value;
+		}
+		
+		var saveData = escape(JSON.stringify(userInput));
+		
+		//Set that data, and sanitize with parameterization
+		db.execute("INSERT INTO users (user) VALUES(?)", saveData);
+		
+		//Clear input fields upon success
+		firstName.value = "";
+		lastName.value = "";
+		phoneNumber.value = "";
+		
+		//Drop Keyboard
+		firstName.blur();
+		lastName.blur();
+		phoneNumber.blur();
+		
+		data = getRowData();
+		tableView.setData(data);
+		
+		//let the user know it has been saved
+		alert("Your data has been saved!"); //was (saveData + "string")
+	}
+});
+
 // EDIT WINDOW view code
 
 var editWindow = Titanium.UI.createWindow({
 	title: "Edit Window",
-	backgroundColor: "#000",
+	backgroundColor: "#fff",
 	layout: "vertical"
 });
 
 var editFirstName = Titanium.UI.createTextField({
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	color: "#000",
-	width: 400,
+	width: 300,
 	height: 60,
-	top: 10,
+	top: 5,
+	textAlign: "center",
 	hintText: "First Name"
 });
 
 var editLastName = Titanium.UI.createTextField({
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	color: "#000",
-	width: 400,
+	width: 300,
 	height: 60,
-	top: 80,
+	top: 5,
+	textAlign: "center",
 	hintText: "Last Name"
 });
 
 var editPhoneNumber = Titanium.UI.createTextField({
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	color: "#000",
-	width: 400,
+	width: 300,
 	height: 60,
-	top: 150,
-	hintText: "Last Name"
+	top: 5,
+	textAlign: "center",
+	hintText: "Phone Number"
 });
 
 var saveButton = Titanium.UI.createButton({
 	title: "Save",
-	height: 50,
+	top: 30,
+	height: 60,
 	width: 300
 });
 
 var cancelButton = Titanium.UI.createButton({
 	title: "Cancel",
-	height: 50,
+	top: 5,
+	height: 60,
 	width: 300
 });
 
@@ -144,9 +195,10 @@ function getRowData() {
 		// Add table row
 		//Store the fields directly to the rowData
 		newData.push({
-			title: displayData.first_name + " " + displayData.last_name,
+			title: displayData.first_name + " " + displayData.last_name + " " + displayData.phone_number,
 			first_name: displayData.first_name,
 			last_name: displayData.last_name,
+			phone_number: displayData.phone_number,
 			id: rows.fieldByName("id")
 		});
 		rows.next();
@@ -154,6 +206,99 @@ function getRowData() {
 	
 	return newData;
 };
+
+// Create Options dialog box
+var options = {
+	cancel: 2,
+	options: ["Edit", "Delete", "Cancel"],
+	selectedIndex: 2,
+	destructive: 1,
+	title: "Edit Or Delete File?"
+};
+
+// Click event for options dialog
+tableView.addEventListener("click", function(e){
+	
+	//Grab rowData stored in the row
+	var id = e.rowData.id;
+	var firstName = e.rowData.first_name;
+	var lastName = e.rowData.last_name;
+	var phoneNumber = e.rowData.phone_number;
+	
+	//Add dialogue options
+	var dialog = Ti.UI.createOptionDialog(options);
+	
+	//Lisen for each option in the options doalog
+	dialog.addEventListener("click", function(e){
+		if(e.index === 0) {
+			//edit
+			//populate that into the fields
+			editFirstName.value = firstName;
+			editLastName.value = lastName;
+			editPhoneNumber.value = phoneNumber;
+			
+			editWindow.open();
+			
+			var saveChanges = function() {
+				if (editFirstName.value == "" && editLastName.value == "") {
+					alert("First Name is a required field.");
+				} else if (editLastName.value == "") {
+					alert("Last Name is a required field.");
+				} else if (editFirstName.value == "") {
+					alert("First Name and Last Name are required fields.");
+				} else {
+					var userInput = {};
+					userInput.first_name = editFirstName.value;
+					userInput.last_name = editLastName.value;
+					userInput.phone_number = editPhoneNumber.value;
+					
+					var saveData = escape(JSON.stringify(userInput));
+					
+					//Set that data, and sanitize with parameterization
+					
+					db.execute("UPDATE users SET user=? WHERE id=?",saveData,id);
+					
+					//Clear input fields upon success
+					editFirstName.value = "";
+					editLastName.value = "";
+					editPhoneNumber.value = "";
+					
+					//drop keyboard
+					editFirstName.blur();
+					editLastName.blur();
+					editPhoneNumber.blur();
+					
+					//update into database
+					data = getRowData();
+					tableView.setData(data);
+					
+					//Remove Event Listener
+					saveButton.removeEventListener("click", saveChanges);
+					editWindow.close();
+					alert("Row updated!");
+				}
+			};
+			saveButton.addEventListener("click", saveChanges);
+			
+			var cancelChanges = function() {
+				//Remove Event Listener
+				cancelButton.removeEventListener("click", cancelChanges);
+				editWindow.close();
+			};
+			cancelButton.addEventListener("click", cancelChanges);
+			
+			editWindow.open();
+		} else if(e.index === 1) {
+			db.execute("DELETE FROM users WHERE id=?", id);
+			
+			data = getRowData();
+			tableView.setData(data);
+			
+			alert("Row deleted!");
+		}
+	});
+	dialog.show();
+});
 
 win2.add(tableView);
 
