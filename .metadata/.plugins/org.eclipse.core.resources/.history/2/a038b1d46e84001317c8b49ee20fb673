@@ -9,7 +9,8 @@ var db = Titanium.Database.open("users");
 db.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, user TEXT)");
 
 var getRows = require("crud");
-var data = getRows.rows();
+
+var data = getRows();
 
 var tableView = Titanium.UI.createTableView({
 	data: data,
@@ -114,7 +115,7 @@ submitButton.addEventListener("click", function(e){
 		lastName.blur();
 		phoneNumber.blur();
 		
-		data = getRows.rows();
+		data = getRowData();
 		tableView.setData(data);
 		
 		//let the user know it has been saved
@@ -191,6 +192,28 @@ var tab2 = Titanium.UI.createTab({
     window:win2
 });
 
+function getRowData() {
+	var newData = [];
+	// Loop through data for window #2
+	var rows = db.execute("SELECT * FROM users");
+	while (rows.isValidRow()) {
+		var parsedData = unescape(rows.fieldByName("user"));
+		var displayData = JSON.parse(parsedData);
+		// Add table row
+		//Store the fields directly to the rowData
+		newData.push({
+			title: displayData.first_name + " " + displayData.last_name + " - " + displayData.phone_number,
+			first_name: displayData.first_name,
+			last_name: displayData.last_name,
+			phone_number: displayData.phone_number,
+			id: rows.fieldByName("id")
+		});
+		rows.next();
+	}
+	
+	return newData;
+};
+
 // Create Options dialog box
 var options = {
 	cancel: 2,
@@ -262,7 +285,7 @@ tableView.addEventListener("click", function(e){
 					editPhoneNumber.blur();
 					
 					//update into database
-					data = getRows.rows();
+					data = getRowData();
 					tableView.setData(data);
 					
 					//Remove Event Listener
@@ -286,7 +309,7 @@ tableView.addEventListener("click", function(e){
 				if(e.index === 0) {
 					db.execute("DELETE FROM users WHERE id=?", id);
 					
-					data = getRows.rows();
+					data = getRowData();
 					tableView.setData(data);
 					
 					alert("Row deleted!");	
