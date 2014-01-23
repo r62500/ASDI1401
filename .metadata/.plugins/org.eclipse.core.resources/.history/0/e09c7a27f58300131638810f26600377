@@ -70,7 +70,8 @@ var phoneNumber = Titanium.UI.createTextField({
 });
 
 var submitButton = Titanium.UI.createButton({
-	top: 260,
+	borderColor: "#00CC00",
+	top: 220,
 	height: 60,
 	width: 300,
 	title: "Submit Data"
