@@ -93,7 +93,7 @@ submitButton.addEventListener("click", function(e){
 		userInput.first_name = firstName.value;
 		userInput.last_name = lastName.value;
 		if (phoneNumber.value == "") {
-			phoneNumber.value = "No Phone";
+			phoneNumber.value = "- No Phone";
 			userInput.phone_number = phoneNumber.value;
 		} else {
 			userInput.phone_number = phoneNumber.value;
@@ -222,14 +222,6 @@ var options = {
 	title: "Edit Or Delete File?"
 };
 
-var sure = {
-	cancel: 1,
-	options: ["Yes", "No"],
-	selectedIndex: 1,
-	destructive: 0,
-	title: "Are you sure you want to delete this item?"
-};
-
 // Click event for options dialog
 tableView.addEventListener("click", function(e){
 	
@@ -241,7 +233,6 @@ tableView.addEventListener("click", function(e){
 	
 	//Add dialogue options
 	var dialog = Ti.UI.createOptionDialog(options);
-	var dialogSure = Ti.UI.createOptionDialog(sure);
 	
 	//Lisen for each option in the options doalog
 	dialog.addEventListener("click", function(e){
@@ -304,17 +295,12 @@ tableView.addEventListener("click", function(e){
 			
 			editWindow.open();
 		} else if(e.index === 1) {
-			dialogSure.addEventListener("click", function(e){
-				if(e.index === 0) {
-					db.execute("DELETE FROM users WHERE id=?", id);
-					
-					data = getRowData();
-					tableView.setData(data);
-					
-					alert("Row deleted!");	
-				}
-			});
-			dialogSure.show();
+			db.execute("DELETE FROM users WHERE id=?", id);
+			
+			data = getRowData();
+			tableView.setData(data);
+			
+			alert("Row deleted!");
 		}
 	});
 	dialog.show();
