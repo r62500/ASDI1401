@@ -5,15 +5,11 @@
 // this sets the background color of the master UIView (when there are no windows/tab groups on it)
 Titanium.UI.setBackgroundColor('#000');
 
-// create database
 var db = Titanium.Database.open("users");
 db.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, user TEXT)");
 
-// build rows for table using data from user input.
 var rows = require("buildRows");
 var data = rows.rows();
-
-// create table view
 var tableView = Titanium.UI.createTableView({
 	data: data,
 	editable: false,
@@ -34,19 +30,6 @@ var tab1 = Titanium.UI.createTab({
     icon:'KS_nav_views.png',
     title:'User Input',
     window:win1
-});
-
-//
-// create controls tab and root window - DATABASE
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Database Window',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Database',
-    window:win2
 });
 
 // User input fields
@@ -89,13 +72,6 @@ var submitButton = Titanium.UI.createButton({
 	height: 60,
 	width: 300,
 	title: "Submit Data"
-});
-
-var required = Ti.UI.createLabel({
-	text: "* = Required field",
-	top: 340,
-	color: "#ff0000",
-	font: {fontSize:10,fontFamily:'Helvetica Neue'}
 });
 
 // EDIT WINDOW view code
@@ -150,7 +126,24 @@ var cancelButton = Titanium.UI.createButton({
 	width: 300
 });
 
-// Create Options dialog boxes
+editWindow.add(editFirstName, editLastName, editPhoneNumber, saveButton, cancelButton);
+
+win1.add(firstName, lastName, phoneNumber, submitButton);
+
+//
+// create controls tab and root window - DATABASE
+//
+var win2 = Titanium.UI.createWindow({  
+    title:'Database Window',
+    backgroundColor:'#fff'
+});
+var tab2 = Titanium.UI.createTab({  
+    icon:'KS_nav_ui.png',
+    title:'Database',
+    window:win2
+});
+
+// Create Options dialog box
 var options = {
 	cancel: 2,
 	options: ["Edit", "Delete", "Cancel"],
@@ -170,9 +163,6 @@ var sure = {
 // load in event listeners for crud functions
 var load = require("crud");
 
-editWindow.add(editFirstName, editLastName, editPhoneNumber, saveButton, cancelButton);
-
-win1.add(firstName, lastName, phoneNumber, required, submitButton);
 
 win2.add(tableView);
 

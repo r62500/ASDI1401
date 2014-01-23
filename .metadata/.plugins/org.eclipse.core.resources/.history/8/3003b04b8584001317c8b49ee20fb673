@@ -2,6 +2,7 @@
 // ASDI 1401
 // Project 3
 
+
 // Click Event for Submit button
 submitButton.addEventListener("click", function(e){
 	
