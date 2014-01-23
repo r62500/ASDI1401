@@ -1,0 +1,72 @@
+// Aaron Korpa
+// ASDI 1401
+// Project 3
+
+exports.rows = function getRowData() {
+	var newData = [];
+	// Loop through data for window #2
+	var rows = db.execute("SELECT * FROM users");
+	while (rows.isValidRow()) {
+		var parsedData = unescape(rows.fieldByName("user"));
+		var displayData = JSON.parse(parsedData);
+		// Add table row
+		//Store the fields directly to the rowData
+		newData.push({
+			title: displayData.first_name + " " + displayData.last_name + " - " + displayData.phone_number,
+			first_name: displayData.first_name,
+			last_name: displayData.last_name,
+			phone_number: displayData.phone_number,
+			id: rows.fieldByName("id")
+		});
+		rows.next();
+	}
+	
+	return newData;
+};
+
+exports.submit = function submitData(e) {
+	
+	//Make sure required fields are entered, else error.
+	if (lastName.value == "" && firstName.value == "") {
+		alert("First Name is a required field.");
+	} else if (lastName.value == "") {
+		alert("Last Name is a required field");
+	} else if (firstName.value == "") {
+		alert("First Name and Last Name are required fields.");
+	} else {
+	var userInput = {};
+
+	
+	userInput.first_name = firstName.value;
+	userInput.last_name = lastName.value;
+	if (phoneNumber.value == "") {
+		phoneNumber.value = "No Phone";
+		userInput.phone_number = phoneNumber.value;
+	} else {
+		userInput.phone_number = phoneNumber.value;
+	}
+	
+	var saveData = escape(JSON.stringify(userInput));
+	
+	//Set that data, and sanitize with parameterization
+	db.execute("INSERT INTO users (user) VALUES(?)", saveData);
+	
+	//Clear input fields upon success
+	firstName.value = "";
+	lastName.value = "";
+	phoneNumber.value = "";
+	
+	//Drop Keyboard
+	firstName.blur();
+	lastName.blur();
+	phoneNumber.blur();
+	
+	data = getRows.rows();
+	tableView.setData(data);
+	
+	//let the user know it has been saved
+	alert("Your data has been saved!");
+};
+
+
+
