@@ -1,0 +1,3 @@
+dependencies: \
+  /Users/aaronkorpa/Documents/Fullsail/9\ ASDI/ASDI_Workspace/ASDI_Project4/build/iphone/Classes/ASI/Reachability.m \
+  /Users/aaronkorpa/Documents/Fullsail/9\ ASDI/ASDI_Workspace/ASDI_Project4/build/iphone/Classes/ASI/Reachability.h
