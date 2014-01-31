@@ -1,0 +1,48 @@
+// Aaron Korpa
+// ASDI 1401
+// Project 2
+
+var remoteResponse, remoteError, json, testTitle1, testAuthor1, testTitle2, testAuthor2, rData, row, authorL;
+
+var table = Ti.UI.createTableView({
+	
+});
+
+var tableData = [];
+
+var remoteResponse = function(){
+	Ti.API.debug(this.responseText);
+	json = JSON.parse(this.responseText);
+	
+	for(i=0;i<5;i++){
+		rData = json.data.children[i].data;
+		row = Ti.UI.createTableViewRow({
+			height: "100dp"
+		});
+	
+		authorL = Ti.UI.createLabel({
+			text: rData.author
+		});
+		row.add(authorL.text);
+		tableData.push(row);
+	};
+	table.setdata(tableData);
+};
+
+var remoteError = function(e){
+	Ti.API.debug("Status: " + this.status);
+	TI.API.debug("Text: " + this.responseText);
+	TI.API.debug("Error: " + e.error);
+	alert("There is a problem pulling remote data");
+};
+
+var xhr = Ti.Network.createHTTPClient({
+	onload: remoteResponse,
+	onError: remoteError,
+	timeout: 5000
+});
+
+xhr.open("GET", "http://api.reddit.com/");
+xhr.send();
+
+exports.data = table;

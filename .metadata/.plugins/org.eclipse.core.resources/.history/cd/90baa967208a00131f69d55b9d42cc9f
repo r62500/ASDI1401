@@ -1,0 +1,41 @@
+// Aaron Korpa
+// ASDI 1401
+// Project 4
+
+
+// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+Titanium.UI.setBackgroundColor('#000');
+
+var remoteTable = require("remote_data");
+
+var tabGroup = Titanium.UI.createTabGroup();
+
+var win1 = Titanium.UI.createWindow({
+	title: "Aaron Korpa - Project 4",
+	backgroundColor: "#fff"
+});
+
+var tab1 = Titanium.UI.createTab({  
+    icon:'KS_nav_views.png',
+    title:'Remote Data',
+    window:win1
+});
+
+
+
+// Labels to apply remote data to.
+
+
+console.log(author1.text);
+
+// add labels to view
+view.add(author1, title1, author2, title2);
+
+// add view to window
+win1.add(remoteTable.data);
+
+//  add tabs
+tabGroup.addTab(tab1);  
+
+// open tab group
+tabGroup.open();
