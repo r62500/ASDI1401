@@ -912,3 +912,15 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/aaronkor
 
 !ENTRY org.eclipse.osgi 2 1 2014-01-30 16:02:15.803
 !MESSAGE NLS missing message: NodeTitaniumSDKCommandsHandler_mobileWebBuild in: com.appcelerator.titanium.mobile.cli.messages
+
+!ENTRY com.aptana.git.core 4 0 2014-01-30 17:28:11.259
+!MESSAGE Failed to acquire write lock on git repository. please ensure any other long-running git processes (i.e. git pull) are completed before retrying.
+
+!ENTRY com.aptana.git.core 4 0 2014-01-30 17:28:19.783
+!MESSAGE Failed to acquire write lock on git repository. please ensure any other long-running git processes (i.e. git pull) are completed before retrying.
+
+!ENTRY org.eclipse.osgi 2 1 2014-01-30 17:28:56.661
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningAndroid in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-01-30 17:28:56.661
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningIOS in: com.appcelerator.titanium.ui.wizard.messages
