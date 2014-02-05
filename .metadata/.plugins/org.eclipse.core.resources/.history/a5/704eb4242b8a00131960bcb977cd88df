@@ -9,8 +9,8 @@ var remoteResponse = function(){
 	Ti.API.debug(this.responseText);
 	json = JSON.parse(this.responseText);
 	
-	testAuthor1 = json.data.children[12].data.author;
-	testAuthor2 = json.data.children[14].data.author;
+	testAuthor1 = json.data.children[8].data.author;
+	testAuthor2 = json.data.children[11].data.author;
 
 			
 	Ti.API.debug(testAuthor1);
